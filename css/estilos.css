@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@300;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 13% auto 10%;
+    align-items: center;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+}
+
+.cuerpo{
+    background-color: rgb( 26, 26, 26);
+}
+
+.contacto{
+    background-color: rgb( 26, 26, 26);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vh 1fr 10vh;
+    align-items: center;
+    grid-template-areas:
+        "header"
+        "formulario"
+        "footer";
+}
+
+
+.form{
+    background-color: rgba(8, 8, 8, 0.24);
+    border: solid 4px black;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    display: flex;
+    margin: auto;
+}
+
+.formularioTitulo{
+    font-size: 400%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 25px;
+}
+
+.formulario{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: block;
+    margin-left: 25%;
+}
+
+.enviar{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 70%;
+    padding: 2px;
+    background-color: red;
+    color:white;
+    border: solid 3px black;
+}
+
+.index{
+    background-image: url(../assets/image/Bring-Me-The-Horizon-December-2021-promo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header{
+    grid-area: header;
+}
+
+img{
+    border-radius: 4px;
+    margin-left: 13px;
+    margin-top: 5px;
+    height: 50px;
+}
+
+#navbarNav a{
+    color: white;
+    background-color: rgb( 22, 22, 22);
+    border: solid 3px rgb( 36, 36, 36);
+    border-radius: 5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+}
+
+.navbar .navbar-toggler{
+    border: 1px solid white;
+}
+
+.navbar .navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar{
+    padding: 0;
+}
+
+.text-light{
+    color: white;
+    text-align: center;
+    font-size: 400%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    margin-bottom: 80px
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer{
+    font-size: 25px;
+    color: white;
+    padding-bottom: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: footer;
+}
+
+i{
+    padding-left: 25px;
+}
+
+#discos{
+    text-align: left;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.albums{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    margin: 35px 63px 15px 63px;
+    border: solid 3px black;
+    border-radius: 5px;
+    justify-items: center;
+    align-items: center;
+}
+
+#amen{
+    background-image: url(https://images.genius.com/bf31932a2dfe532e061fb645ba2bba12.300x300x1.png);
+    background-size: 200px 200px;
+}
+
+#dieau{
+    background-image: url(https://images.genius.com/302721e51b3d0fb806dbf12b03dc1a85.1000x1000x1.png);
+    background-size: 200px 200px;
+}
+
+#strangers{
+    background-image: url(https://images.genius.com/0ddd512927e643f208ca168f500b1429.1000x1000x1.png);
+    background-size: 200px 200px;
+}
+
+#lost{
+    background-image: url(https://images.genius.com/40ad5ed2b36680f6bdebc6e8eee9bc25.1000x1000x1.jpg);
+    background-size: 200px 200px;
+}
+
+#parasite{
+    background-image: url(data:image/jpeg;base64,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);
+    background-size: 200px 200px;
+}
+
+#throne{
+    background-image: url(https://images.genius.com/f530f2baf6a87c48ff0fd5c59042f15a.1000x1000x1.jpg);
+    background-size: 200px 200px;
+}
+
+#drown{
+    background-image: url(https://images.genius.com/f530f2baf6a87c48ff0fd5c59042f15a.1000x1000x1.jpg);
+    background-size: 200px 200px;
+}
+
+#sempitermal{
+    background-image: url(https://images.genius.com/01a21cb7fa67046704be57f5926ba96e.1000x1000x1.jpg);
+    background-size: 200px 200px;
+}
+
+#post{
+    background-image: url(https://i0.wp.com/www.scienceofnoise.net/wp-content/uploads/2020/12/Bring-Me-The-Horizon-post-human-survival-horror-website-artwork.jpg);
+    background-size: 200px 200px;
+}
+
+#obey{
+    background-image: url(https://images.genius.com/9dfca9b5a1cf96f29e1ca74d0dd9b215.1000x1000x1.png);
+    background-size: 200px 200px;
+}
+
+#suicide{
+    background-image: url(https://images.genius.com/c20b2603fad2039e8ffe920eed8efa56.1000x1000x1.jpg);
+    background-size: 200px 200px;
+}
+
+article{
+    display: flex;
+    align-items: flex-start;
+}
+
+.parrafo1{
+    color: white;
+    margin: 100px 45px 0px 145px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.parrafo{
+    color: white;
+    margin: 100px 145px 0px 45px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.integrantes{
+    width: 250px;
+    height: 250px;
+    border: solid 3px rgb(110, 110, 110);
+    border-radius: 5px;
+    margin: 65px 90px 0px 0px;
+}
+
+.integrantes1{
+    width: 250px;
+    height: 250px;
+    border: solid 3px rgb(110, 110, 110);
+    border-radius: 5px;
+    margin: 65px 0px 0px 90px;
+}
+
+.fechas{
+    background-color: rgba(8, 8, 8, 0.315);
+    height: 80px;
+    width: 1177px;
+    border: solid 3px black;
+    border-radius: 4px;
+    margin: 10px 80px 30px 80px;
+    color: red;
+    font-family: lato;
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.boton a{
+    color: white;
+    padding: 3px 35px;
+    border: solid 3px black;
+    background-color: red;
+    text-decoration: none;
+}
+
+#primero{
+    margin-top: 70px;
+}
+
+form{
+    color: white;
+    display: flex;
+    margin: auto;
+    grid-area: formulario;
+}
+
+@media (min-width: 320px) and (max-width: 1023px){
+    header img{
+        height: 50px;
+    }
+
+    footer{
+        font-size: 20px;
+    }
+
+    .index{
+        background-size: cover;
+        background-position: center;
+    }
+
+    #discos{
+        grid-template-columns: 1fr;
+    }
+
+    .albums{
+        margin: 60px 60px 25px 60px;
+    }
+
+    .text-light{
+        font-size: 210%;
+    }
+
+}
+
+@media (min-width: 480px) and (max-width: 1023px){
+    #discos{
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .albums{
+        margin: 60px 20px 15px 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+    .text-light{
+        font-size: 350%;
+        margin-bottom: 200px;
+    }
+
+    footer{
+        font-size: 33px;
+    }
+
+    .albums{
+        margin: 70px 92px 15px 92px;
+    }
+
+}
