@@ -252,10 +252,7 @@ article{
     margin: 10px 80px 30px 80px;
     color: red;
     font-family: lato;
-    font-size: 26px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    font-size: 23px;
 }
 
 .boton a{
@@ -303,6 +300,25 @@ form{
         font-size: 210%;
     }
 
+    .fechas{
+        display: block;
+        width: 220px;
+        height: 200px;
+        margin: 10px 50px 35px 50px;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenidoFechas{
+        margin: 15px 20px 15px 20px;
+    }
+    
+    .boton{
+        display: flex;
+        justify-content: center;
+    }
 }
 
 @media (min-width: 480px) and (max-width: 1023px){
@@ -312,6 +328,18 @@ form{
 
     .albums{
         margin: 60px 20px 15px 20px;
+    }
+
+    .conciertos{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-self: center;
+    }
+
+    .fechas{
+        width: 250px;
+        height: 215px;
+        font-size: 21px;
     }
 }
 
@@ -329,4 +357,29 @@ form{
         margin: 70px 92px 15px 92px;
     }
 
+    .conciertos{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #primero{
+        margin-top: 10px;
+    }
+
+    .fechas{
+        width: 285px;
+        height: 220px;
+        font-size: 23px;
+        margin: 10px 48px 35px 48px;
+    }
+}
+
+@media (min-width: 1024px){
+    .contenidoFechas{
+        height: 80px;
+        width: 1172px;
+        display: inline-block;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
 }
