@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: rgb(26, 26, 26);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 13% auto 10%;
+    align-self: center;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+}
+
+.cuerpo {
+    background-color: rgb(26, 26, 26);
+}

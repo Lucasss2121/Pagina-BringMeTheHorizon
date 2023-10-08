@@ -1,0 +1,109 @@
+@media (min-width: 320px) and (max-width: 1023px){
+    header img{
+        height: 50px;
+    }
+
+    footer{
+        font-size: 20px;
+    }
+
+    .index{
+        background-size: cover;
+        background-position: center;
+    }
+
+    #discos{
+        grid-template-columns: 1fr;
+    }
+
+    .albums{
+        margin: 60px 60px 25px 60px;
+    }
+
+    .text-light{
+        font-size: 210%;
+    }
+
+    .fechas{
+        display: block;
+        width: 220px;
+        height: 200px;
+        margin: 10px 50px 35px 50px;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenidoFechas{
+        margin: 15px 20px 15px 20px;
+    }
+    
+    .boton{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 1023px){
+    #discos{
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .albums{
+        margin: 60px 20px 15px 20px;
+    }
+
+    .conciertos{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-self: center;
+    }
+
+    .fechas{
+        width: 250px;
+        height: 215px;
+        font-size: 21px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+    .text-light{
+        font-size: 350%;
+        margin-bottom: 200px;
+    }
+
+    footer{
+        font-size: 33px;
+    }
+
+    .albums{
+        margin: 70px 92px 15px 92px;
+    }
+
+    .conciertos{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #primero{
+        margin-top: 10px;
+    }
+
+    .fechas{
+        width: 285px;
+        height: 220px;
+        font-size: 23px;
+        margin: 10px 48px 35px 48px;
+    }
+}
+
+@media (min-width: 1024px){
+    .contenidoFechas{
+        height: 80px;
+        width: 1172px;
+        display: inline-block;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
