@@ -2,10 +2,11 @@ footer {
     font-size: 25px;
     color: white;
     padding-bottom: 12px;
+    padding-top: 45px;
     display: flex;
     justify-content: center;
     align-items: center;
-    grid-area: "footer";
+    grid-area: footer;
 
     i {
         padding-left: 25px;
