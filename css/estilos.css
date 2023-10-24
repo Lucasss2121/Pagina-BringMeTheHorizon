@@ -7,7 +7,7 @@
 
 body {
   height: 100vh;
-  background-color: rgb(26, 26, 26);
+  background-color: #1a1a1a;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 13% auto 15%;
@@ -16,7 +16,7 @@ body {
 }
 
 .cuerpo {
-  background-color: rgb(26, 26, 26);
+  background-color: #1a1a1a;
 }
 
 header {
@@ -56,9 +56,12 @@ header nav a img {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
+header nav .container-fluid #navbarNav ul .nav-item a {
+  padding-left: 10px;
+}
+
 footer {
   font-size: 25px;
-  color: white;
   padding-bottom: 12px;
   padding-top: 45px;
   display: flex;
@@ -66,8 +69,18 @@ footer {
   align-items: center;
   grid-area: footer;
 }
-footer i {
+footer a {
+  color: white;
+}
+footer a i {
   padding-left: 25px;
+  transition: 250ms;
+}
+footer a i:hover {
+  transform: translate(2px, -2px);
+}
+footer a i:active {
+  color: rgb(131, 0, 0);
 }
 
 .index {
@@ -204,12 +217,12 @@ section article {
 }
 section article .parrafo1 {
   color: white;
-  margin: 100px 45px 0px 145px;
+  margin: 90px 45px 0px 145px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 section article .parrafo {
   color: white;
-  margin: 100px 145px 0px 45px;
+  margin: 90px 145px 0px 45px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 section article .integrantes {
@@ -280,6 +293,16 @@ main #primero {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   display: block;
   margin-left: 25%;
+  border-radius: 5px;
+}
+.contacto main .form .contenedorFormulario #nombre {
+  border: solid 3px black;
+}
+.contacto main .form .contenedorFormulario #email {
+  border: solid 3px black;
+}
+.contacto main .form .contenedorFormulario #mensaje {
+  border: solid 3px black;
 }
 .contacto main .form .contenedorFormulario .enviar {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -289,6 +312,7 @@ main #primero {
   background-color: red;
   color: white;
   border: solid 3px black;
+  border-radius: 5px;
 }
 .contacto main .form .contenedorFormulario .enviar:active {
   background-color: white;
@@ -367,9 +391,9 @@ main #primero {
     padding: 0px 10px 0px 10px;
   }
   .contacto main .form .contenedorFormulario .formulario {
-    margin-left: 35px;
-    margin-right: 35px;
-    width: 75%;
+    margin-left: 13px;
+    margin-right: 13px;
+    width: 90%;
   }
 }
 @media (min-width: 480px) and (max-width: 1024px) {
@@ -430,21 +454,21 @@ main #primero {
     margin-top: 10px;
   }
   .cuerpo main section .columnReverse .integrantes {
-    width: 350px;
-    height: 350px;
-    margin: 35px 209px 15px 209px;
+    width: 250px;
+    height: 250px;
+    margin: 35px 259px 15px 259px;
   }
   .cuerpo main section .columnReverse .parrafo1 {
-    margin: 40px 65px 0px 65px;
+    margin: 40px 95px 0px 95px;
     font-size: 140%;
   }
   .cuerpo main section article .integrantes1 {
-    width: 350px;
-    height: 350px;
-    margin: 35px 209px 15px 209px;
+    width: 250px;
+    height: 250px;
+    margin: 35px 259px 15px 259px;
   }
   .cuerpo main section article .parrafo {
-    margin: 40px 65px 0px 65px;
+    margin: 40px 95px 0px 95px;
     font-size: 140%;
   }
   .contacto {
@@ -495,7 +519,7 @@ main #primero {
     margin: 65px 60px 15px 25px;
   }
   .cuerpo main section .columnReverse .parrafo1 {
-    margin: 95px 0px 0px 70px;
+    margin: 65px 5px 0px 70px;
     font-size: 140%;
   }
   .cuerpo main section article {
@@ -507,7 +531,7 @@ main #primero {
     margin: 65px 25px 15px 60px;
   }
   .cuerpo main section article .parrafo {
-    margin: 95px 70px 0px 0px;
+    margin: 65px 70px 0px 5px;
     font-size: 140%;
   }
   .contacto main .form .contenedorFormulario .formularioTitulo {
@@ -519,13 +543,35 @@ main #primero {
   }
 }
 @media (min-width: 1200px) {
+  main .fechas {
+    width: 91%;
+    margin: 10px 64px 30px 64px;
+  }
   main .fechas .contenidoFechas {
     height: 80px;
-    width: 1172px;
+    width: 100%;
     display: inline-block;
     display: flex;
     justify-content: space-around;
     align-items: center;
+  }
+  main #discos {
+    place-items: center;
+  }
+  main #discos .albums {
+    margin: 35px 0px 15px 0px;
+  }
+  section article .parrafo1 {
+    max-width: 1000px;
+  }
+  section article .parrafo {
+    max-width: 1000px;
+  }
+}
+@media (min-width: 2560px) {
+  main .fechas {
+    width: 95%;
+    margin: 10px 60px 30px 60px;
   }
 }
 

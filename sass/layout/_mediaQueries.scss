@@ -103,9 +103,9 @@
                     }
 
                     .formulario{
-                        margin-left: 35px;
-                        margin-right: 35px;
-                        width: 75%;
+                        margin-left: 13px;
+                        margin-right: 13px;
+                        width: 90%;
                     }
                 }
             }
@@ -216,26 +216,26 @@
             section{
                 .columnReverse{
                     .integrantes{
-                        width: 350px;
-                        height: 350px;
-                        margin: 35px 209px 15px 209px;
+                        width: 250px;
+                        height: 250px;
+                        margin: 35px 259px 15px 259px;
                     }
 
                     .parrafo1{
-                        margin: 40px 65px 0px 65px;
+                        margin: 40px 95px 0px 95px;
                         font-size: 140%;
                     }
                 }
 
                 article{
                     .integrantes1{
-                        width: 350px;
-                        height: 350px;
-                        margin: 35px 209px 15px 209px;
+                        width: 250px;
+                        height: 250px;
+                        margin: 35px 259px 15px 259px;
                     }
 
                     .parrafo{
-                        margin: 40px 65px 0px 65px;
+                        margin: 40px 95px 0px 95px;
                         font-size: 140%;
                     }
                 }
@@ -315,7 +315,7 @@
                     }
 
                     .parrafo1{
-                        margin: 95px 0px 0px 70px;
+                        margin: 65px 5px 0px 70px;
                         font-size: 140%;
                     }
                 }
@@ -330,7 +330,7 @@
                     }
 
                     .parrafo{
-                        margin: 95px 70px 0px 0px;
+                        margin: 65px 70px 0px 5px;
                         font-size: 140%;
                     }
                 }
@@ -359,14 +359,46 @@
 @media (min-width: 1200px) {
     main{
         .fechas{
+            width: 91%;
+            margin: 10px 64px 30px 64px;
+
             .contenidoFechas{
                 height: 80px;
-                width: 1172px;
+                width: 100%;
                 display: inline-block;
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
             }
+        }
+
+        #discos{
+            place-items: center;
+
+            .albums{
+                margin: 35px 0px 15px 0px;
+            }
+        }
+    }
+
+    section{
+        article{
+            .parrafo1{
+                max-width: 1000px;
+            }
+
+            .parrafo{
+                max-width: 1000px;
+            }
+        }
+    }
+}
+
+@media (min-width:2560px) {
+    main {
+        .fechas{
+            width: 95%;
+            margin: 10px 60px 30px 60px;
         }
     }
 }

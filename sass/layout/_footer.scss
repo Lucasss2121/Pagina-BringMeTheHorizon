@@ -1,6 +1,5 @@
 footer {
     font-size: 25px;
-    color: white;
     padding-bottom: 12px;
     padding-top: 45px;
     display: flex;
@@ -8,7 +7,20 @@ footer {
     align-items: center;
     grid-area: footer;
 
-    i {
-        padding-left: 25px;
+    a{
+        color: white;
+
+        i {
+            padding-left: 25px;
+            transition: 250ms;
+
+            &:hover{
+                transform: translate(2px, -2px);
+            }
+
+            &:active{
+                color: rgb(131, 0, 0);
+            }
+        }
     }
 }
